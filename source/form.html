@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,8 +11,8 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="img/logotype-image.svg" width="34" height="38" alt="Логотип компании фото.">
-      <img class="footer-logo" src="img/logotype-text.svg" width="101" height="18"
+      <img src="img/logotype_image.svg" width="34" height="38" alt="Логотип компании фото.">
+      <img class="footer-logo" src="img/logotype_text.svg" width="101" height="18"
         alt="логотип компании энергичный кот">
     </a>
     <nav class="main-nav">
@@ -21,13 +22,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item ">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -37,7 +38,7 @@
   <main class="main-inner main-inner--form">
 
     <h1 class="main-inner__title">Подбор программы</h1>
-    <p class="main-inner__info">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <p class="main-inner__info-form">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
     <section class="form">
       <h2 class="visually-hidden">Данные о питомце.</h2>
@@ -81,13 +82,13 @@
           </ul>
         </div>
 
-        <div class="personal">
-          <h3 class="personal__info">Контактные данные (владельца кота)</h3>
+        <div class="personal-date">
+          <h3 class="personal-date__info">Контактные данные (владельца кота)</h3>
           <label class="form__label" for="cat-owner">e-mail:<sup>*</sup></label>
           <input class="form__input-text" type="email" name="catname" id="cat-owner" placeholder="kuklachev@gmail.com">
 
           <label class="form__label" for="owner-phone">Телефон:<sup>*</sup></label>
-          <input class="form__input-tel" type="tel" name="catname" id="owner-phone" placeholder="8 (960) 900-60-90">
+          <input class="form__input-text" type="text" name="catname" id="owner-phone" placeholder="8 (960) 900-60-90">
         </div>
 
         <div class="comments">
@@ -134,7 +135,7 @@
           </ul>
         </div>
 
-        <button class=" button form__button" type="submit">отправить заявку</button>
+        <button class="form__button  button" type="submit">отправить заявку</button>
 
         <small class="form__legend">
           * — обязательные поля
@@ -156,7 +157,7 @@
     <div class="main-footer__wrapper">
 
       <a class="main-footer__logo">
-        <img class="footer-logo" src="img/logotype-text.svg" width="101" height="18"
+        <img class="footer-logo" src="img/logotype_text.svg" width="101" height="18"
           alt="Логотип компании энергичный кот.">
       </a>
 
@@ -174,7 +175,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hiiden">Мы в Телеграме</span>
+              <span class="visually-hidden">Мы в Телеграме</span>
             </a>
           </li>
         </ul>

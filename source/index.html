@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,8 +11,8 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="img/logotype-image.svg" width="34" height="38" alt="Логотип компании фото.">
-      <img class="footer-logo" src="img/logotype-text.svg" width="101" height="18"
+      <img src="img/logotype_image.svg" width="34" height="38" alt="Логотип компании фото.">
+      <img class="footer-logo" src="img/logotype_text.svg" width="101" height="18"
         alt="логотип компании энергичный кот">
     </a>
     <nav class="main-nav">
@@ -21,13 +22,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a href="#">Главная</a>
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -43,7 +44,6 @@
         <header class="promo__header">
           <h2>Функциональное питание для котов</h2>
         </header>
-        <img class="promo__image" src="img/index_box.png" alt="Промо-изображение стакана с логотипом">
         <p class="promo__slogan">занялся собой? займись котом!</p>
         <a class="promo__button">подобрать программу</a>
       </div>
@@ -76,7 +76,9 @@
 
     <section class="advantages">
       <div class="advantages__wrapper">
-        <h2 class="advantages__title">Как это работает</h2>
+        <header class="advantages__header">
+          <h2>Как это работает</h2>
+        </header>
         <ul class="advantages__lists">
           <li class="advantages__item">
             <h3 class="visually-hidden">Полезные вещества.</h3>
@@ -114,13 +116,13 @@
 
         <ul class="special__lists">
           <li class="special__item">
-            <b class="special__weight">5 кг</b>
-            <p class="special__description">снижение веса</p>
+            <b class="special__value">5 кг</b>
+            <p class="special__text">снижение веса</p>
           </li>
 
           <li class="special__item">
-            <b class="special__days">60 дней</b>
-            <p class="special__description">затрачено времени</p>
+            <b class="special__value">60 дней</b>
+            <p class="special__text">затрачено времени</p>
           </li>
         </ul>
 
@@ -145,7 +147,7 @@
         </section>
 
         <section class="location">
-          <h2 class="visually-hidden location__title">Карта с местоположением</h2>
+          <h2 class="visually-hidden">Карта с местоположением</h2>
           <img class="location__maps" src="img/maps.jpg" width="320" height="362" alt="Карта местонахождения магазина.">
         </section>
 
@@ -156,7 +158,7 @@
     <div class="main-footer__wrapper">
 
       <a class="main-footer__logo">
-        <img class="footer-logo" src="img/logotype-text.svg" width="101" height="18"
+        <img class="footer-logo" src="img/logotype_text.svg" width="101" height="18"
           alt="Логотип компании энергичный кот.">
       </a>
 
@@ -174,7 +176,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <span class="visually-hiiden">Мы в Телеграме</span>
+              <span class="visually-hidden">Мы в Телеграме</span>
             </a>
           </li>
         </ul>
