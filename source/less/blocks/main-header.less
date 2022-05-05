@@ -1,9 +1,28 @@
 .main-header {
+  display: flex;
+  flex-direction: column;
   background-color: @basic-white;
 }
 
 .main-header__logo {
-  margin-right: 20px;
-  width: 34px;
-  height: 38px;
+  height: 65px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    height: 76px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 720px;
+    height: 694px;
+    background-image: url("../img/desktop_background.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .main-header__logo {
+    height: 107px;
+  }
 }

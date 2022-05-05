@@ -1,32 +1,74 @@
+.range__wrapper {
+  .wrapper();
+  display: flex;
+}
+
 .range__left {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
+  width: 49px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: @basic-black;
 }
 
 .range__slider {
+  width: 86px;
+  margin-right: 13px;
   background: @basic-white;
-  border: 1px solid #cdcdcd;
-  box-sizing: border-box;
+  border: 1px solid @special-grey;
   border-radius: 6px;
 }
 
 .range__right {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
+  width: 49px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   display: flex;
   align-items: center;
-  text-align: center;
+  text-align: right;
   text-transform: uppercase;
   color: @basic-black;
+}
+
+@media (min-width: @tablet-width) {
+  .range__left {
+    width: 49px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-transform: uppercase;
+    color: @basic-black;
+  }
+
+  .range__slider {
+    width: 428px;
+    margin-right: 13px;
+    background: @basic-white;
+    border: 1px solid @special-grey;
+    border-radius: 6px;
+  }
+
+  .range__right {
+    width: 51px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: uppercase;
+    color: @basic-black;
+  }
 }

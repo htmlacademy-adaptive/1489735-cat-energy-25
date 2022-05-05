@@ -1,6 +1,16 @@
-.special__header {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
+.special {
+  background-color: @other-grey;
+}
+
+.special__wrapper {
+  .wrapper();
+}
+
+.special__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding-top: 25px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -9,27 +19,43 @@
 }
 
 .special__description {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: @special-dark-grey;
 }
 
+.special__lists {
+  .list-reset();
+  display: flex;
+  flex-direction: row;
+}
+
+.special__item {
+  width: 124px;
+}
+
+.special__item + .special__item {
+  margin-left: 32px;
+}
+
 .special__value {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  align-items: center;
   text-align: center;
   color: @basic-black;
 }
 
 .special__text {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: "Arial", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -39,12 +65,139 @@
 }
 
 .special__expenses {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: @basic-black;
+}
+
+@media (min-width: @tablet-width) {
+  .special {
+    background-color: @basic-white;
+  }
+
+  .special__title {
+    margin: 0;
+    margin-bottom: 63px;
+    padding-top: 43px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: @basic-black;
+  }
+
+  .special__description {
+    margin: 0;
+    margin-bottom: 54px;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: @special-dark-grey;
+  }
+
+  .special__item {
+    width: 162px;
+  }
+
+  .special__item + .special__item {
+    margin-left: 42px;
+  }
+
+  .special__value {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    align-items: center;
+    text-align: center;
+    color: @basic-black;
+  }
+
+  .special__text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    align-items: center;
+    text-align: center;
+    color: @special-dark-grey;
+  }
+
+  .special__expenses {
+    width: 174px;
+    display: flex;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-left: 167px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @basic-black;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .special__title {
+    margin: 0;
+    margin-bottom: 76px;
+    padding-top: 69px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: @basic-black;
+  }
+
+  .special__description {
+    width: 438px;
+    margin: 0;
+    margin-bottom: 70px;
+    padding-top: 70px;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: @special-dark-grey;
+  }
+
+  .special__text {
+    margin: 0;
+    margin-bottom: 47px;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    align-items: center;
+    text-align: center;
+    color: @special-dark-grey;
+  }
+
+  .special__expenses {
+    width: 438px;
+    display: flex;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-left: 167px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @basic-black;
+  }
 }
